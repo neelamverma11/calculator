@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>settimeout</title>
+</head>
+<body>
+    <h1 style="text-align: left;" id="dynamicTime">This is dynamic time</h1>
+    <button>click me</button>
+    <script>
+        // var clock = setInterval(clocktiming,1000);
+        // function clocktiming(){
+        // var d = new Date();
+        // var dynamicTime = d.toLocaleTimeString();
+        // document.getElementById('dynamicTime').innerHTML=dynamicTime ;
+        // }
+
+
+        setInterval(function(){
+            var d = new Date();
+            var dynamicTime = d.toLocaleTimeString();
+            document.getElementById('dynamicTime').innerHTML=dynamicTime ;
+        }, 1000);
+    </script>
+</body>
+</html>

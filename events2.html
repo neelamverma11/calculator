@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event2</title>
+</head>
+<body>
+    <div class="event">
+
+        <h3>This is event2</h3>
+        <button onmousedown="mousedown()">mouse down</button>
+        <button onmouseenter="mouseenter()">mouse enter</button>
+
+    </div>
+
+    <script>
+        function mousedown(){
+            document.body.style.backgroundColor = 'blue';
+        }
+        function mouseenter(){
+            document.body.style.backgroundColor = 'red';
+        }
+    </script>
+</body>
+</html>
